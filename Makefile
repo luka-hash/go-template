@@ -3,7 +3,6 @@ NAME := go-template
 PREFIX ?= ~/.local
 BINDIR ?= $(PREFIX)/bin
 
-# GO ?= $(shell which go)
 GO ?= go
 GOFLAGS ?=
 
@@ -11,7 +10,7 @@ GOSRC = $(shell find . -type f -name '*.go')
 
 RM ?= rm -f
 
-.PHONY: default install uninstall clean build run
+.PHONY: default uninstall clean
 
 default: run
 
